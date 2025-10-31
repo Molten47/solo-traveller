@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+:root {
+  /* Primary Colors*/
+ --ocean-blue: #0077B6; /* for buttons & highlights */
+ --sunset-coral:#FF6B6B; /*for CTA buttons, accents */
+ --sand-biege:#F7F3E9; /* soft background - for the genreal background*/
+
+ /* Secondary Colors*/
+
+ --sky-blue: #CAF0F8; /* for secondary sections or cards*/
+ --Deep-navy:#023E8A ;/*for text emphasis or footer background*/
+ --Cool-Gray:#6C757D;  /*for muted text and icons*/
+
+ /*Accent Colors*/
+   
+   --tropical-color:#00bfa6; /*for success, verified, or “available” status*/
+   --golden-amber:#FFC300; /*for highlighting discounts, special offers*/
+
+  /* Primary Font (for text and body)*/
+
+  --heading: "Poppins", sans-serif;
+  --main-font: "Nunito Sans", sans-serif;
+  --secondary: "DM Sans", sans-serif;
+  --body:  "Inter", sans-serif;
+
+  /* Font Colors */
+  --main-text: #212529;
+  --secondary-text: #6C757D;
+  --link-highlights: #0077B6;
+  --headings:#023E8A;
+  --disabled-text:#ADB5BD;
+}
+
+
+body, h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+    padding: 0
+    
+}
+
+/*body styles */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', 'sans-serif';
+    background-color: #F7F3E9;
+    height: 100vh;
+    width: 100%;
+}
+
+@layer utilities {
+  /*Brand background Colors*/
+
+.primary-buttons{
+  background-color: var(--ocean-blue);
+  padding: 1em;
+  color: var(--main-text);
+  font-family: var(--main-font);
+  font-weight:600;
+  font-size: medium;
+  border-radius: 5px;
+}
+.bg-color{
+  background-color: var(--sand-biege);
+}
+.card-sections{
+  background-color: var(--sky-blue);
+}
+.bg-footer{
+  background-color: var(--Deep-navy);
+}
+.bg-gray{
+  background-color: var(--Cool-Gray);
+}
+.bg-success{
+  background-color: var(--tropical-color);
+}
+.bg-highlights{
+  background-color: var(--golden-amber);
+}
+.bg-header{
+  background-color: var(--ocean-blue);
+}
+
+/* Brand Fonts*/
+
+.heading-font{
+  font-family: var(--heading);
+}
+.main-font{
+  font-family: var(--main-font);
+}
+.secondary-font{
+  font-family: var(--secondary);
+}
+.body-font{
+  font-family: var(--body);
+}
+
+/* Brand Font colors*/
+.main-text{
+  color: var(--main-font);
+}
+.highligh-text{
+  color: var(--link-highlights);
+}
+.secondary-text{
+  color: var(--secondary-text);
+}
+.heading-text{
+  color: var(--headings);
+}
+.disabled-text{
+  color: var(--disabled-text);
+}
+
+}
+
